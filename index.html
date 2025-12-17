@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मोहन कुम्हार की कहानी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .story-container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .story-content {
+            padding: 40px;
+            line-height: 2;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .story-text {
+            margin-bottom: 30px;
+            text-align: justify;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .illustration {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .scene {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 15px;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .scene:hover {
+            transform: translateY(-10px);
+        }
+
+        .scene-icon {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+
+        .scene-label {
+            font-size: 1em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .moral {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border-left: 5px solid #667eea;
+        }
+
+        .moral h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .moral p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .story-content {
+                padding: 20px;
+                font-size: 1em;
+            }
+
+            .scene {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="story-container">
+        <div class="header">
+            <h1>🏺 मोहन कुम्हार की कहानी 🏺</h1>
+            <p>मेहनत और सेवा की प्रेरक कथा</p>
+        </div>
+
+        <div class="story-content">
+            <div class="story-text">
+                एक गाँव में मोहन नाम का एक गरीब कुम्हार रहता था। वह रोज़ सुबह नदी से मिट्टी लाता और अपने चाक पर घड़े बनाता। एक दिन उसने एक खास घड़ा बनाया, जिसमें उसने अपना सपना बसाया था। वह घड़ा शहर भेज दिया गया। शहर में उसी घड़े ने एक बच्चे की प्यास बुझाई। मोहन को पैसे कम मिले, पर उसे खुशी हुई कि उसकी मेहनत किसी के काम आई।
+            </div>
+
+            <div class="illustration">
+                <div class="scene">
+                    <div class="scene-icon">🌊</div>
+                    <div class="scene-label">नदी से मिट्टी</div>
+                </div>
+                <div class="scene">
+                    <div class="scene-icon">🏺</div>
+                    <div class="scene-label">घड़ा बनाना</div>
+                </div>
+                <div class="scene">
+                    <div class="scene-icon">🚚</div>
+                    <div class="scene-label">शहर भेजना</div>
+                </div>
+                <div class="scene">
+                    <div class="scene-icon">👶</div>
+                    <div class="scene-label">प्यास बुझाना</div>
+                </div>
+            </div>
+
+            <div class="moral">
+                <h2>✨ कहानी से सीख ✨</h2>
+                <p>
+                    <strong>सच्ची खुशी धन में नहीं, सेवा में है।</strong> मोहन कुम्हार की कहानी हमें सिखाती है कि जीवन में सफलता का असली अर्थ पैसा कमाना नहीं, बल्कि अपनी मेहनत से दूसरों की मदद करना है। जब हमारा काम किसी के जीवन में खुशी लाता है, तो वही सबसे बड़ा इनाम है। मोहन को कम पैसे मिले, लेकिन एक बच्चे की प्यास बुझाने की खुशी अमूल्य थी।
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            एक प्रेरक कहानी | बनाया गया प्यार से ❤️
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const scenes = document.querySelectorAll('.scene');
+
+            scenes.forEach((scene, index) => {
+                scene.style.animationDelay = `${index * 0.2}s`;
+                scene.style.animation = 'fadeIn 0.8s ease-in forwards';
+            });
+        });
+    </script>
+</body>
+</html>
